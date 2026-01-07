@@ -53,9 +53,7 @@ export function DateRangePicker() {
     }
     const dates = getPresetDates(preset);
     setDateRange({ ...dates, preset });
-    if (preset !== 'custom') {
-      setIsOpen(false);
-    }
+    setIsOpen(false);
   };
 
   const handleCustomApply = () => {
